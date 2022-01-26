@@ -2,16 +2,16 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {BottonList, FeedbackBotton} from './FeedbackOption.styled';
 
-const FeedbackOptions = ({ options, onLeaveFeedback }) => (
+const FeedbackOptions = ({ options, onClick }) => (
   <div>
     <BottonList >
       {options.map((option, index) => {
         return (
           <li key={index}>
             < FeedbackBotton
-              onClick={() => {
-                onLeaveFeedback(option);
-              }}
+              onClick={() => 
+               onClick(option)
+              }
             >
               {option}
             </ FeedbackBotton>
