@@ -27,6 +27,28 @@ export default function Feedback(){
    return setBad(state=>state+1);
        }}
 
+
+   //   const leaveFeedback = event => {
+   //  console.log(event )
+   //  switch (event) {
+   //   
+   //    case 'good':
+   //      setGood(state=>state+1);
+   //      break;
+  
+   //    case 'neutral':
+   //      setNeutral(state=>state+1);
+   //      break;
+
+   //      case 'bad':
+   //        setBad(state=>state+1);
+   //        break;
+  
+   //    default:
+   //      return;
+   //  }
+   //};
+
   const countTotalFeedback=()=>{
     let total= good+neutral+bad;
     return total;}
